@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.encryptiondecryption.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/plainText_Field"
+            style="@style/CustomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Text" />
+
+        <TextView
+            style="@style/header_layout"
+            android:textAllCaps="true"
+            android:text="Check an Algorithm" />
+
+        <CheckBox
+            android:id="@+id/Caesar_Cipher_checkbox"
+            style="@style/header_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="Caesar Cipher" />
+
+        <TextView
+            style="@style/header_layout"
+            android:textAllCaps="true"
+            android:text="Output of Caesar Cipher" />
+
+        <TextView
+            android:id="@+id/outputCaesarCipher"
+            style="@style/header_layout"
+            android:textColor="#FF0D0E0E"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/Playfair_checkbox"
+            style="@style/header_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="Playfair" />
+
+        <EditText
+            android:id="@+id/key_Field"
+            style="@style/CustomText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Key" />
+
+        <TextView
+            style="@style/header_layout"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:text="Output of Playfair" />
+
+        <TextView
+            android:id="@+id/outputPlayfair"
+            style="@style/header_layout"
+            android:textColor="#FF0D0E0E"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/header_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="Encrypt_Decrtpt"
+                android:text="Encrypt And Decrypt" />
+
+            <Button
+                style="@style/header_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:onClick="cancel"
+                android:text="Cancel" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
